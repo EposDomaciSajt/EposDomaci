@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Postavljanje visine na html i body za punu visinu menija */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+}
+
+#logo {
+    width: 120px;
+    height: 80px;
+}
+
+/* Stilovi za vertikalni meni */
+.vertical-nav {
+    width: 200px;
+    height: 100%;           /* Zauzima celu visinu ekrana */
+    background-color: #f9fafc;
+    padding: 0;
+    margin: 0;
+    position: fixed;         /* Fiksira navigaciju pri skrolovanju */
+    top: 0;
+    left: 0;
+}
+
+.vertical-nav li {
+    border-bottom: 1px solid #444;
+    text-align: center;
+}
+
+.vertical-nav li a {
+    display: block;
+    color: #858b93;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-nav li a:hover {
+    background-color: #e2e8f0; /* Dodajemo pozadinsku boju pri hoveru */
+    color: #333;
+}
+
+@media (max-width: 300px) {
+    .vertical-nav {
+        transform: translateX(-100%); /* Sakrij meni */
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .burger-toggle:checked + .burger-btn + .vertical-nav {
+        transform: translateX(0); /* Prikazivanje menija */
+    }
+
+    .burger-btn {
+        display: block; /* Vidljivo na manjim ekranima */
+    }
+
+    .content, .footer {
+        margin-left: 0; /* Uklanjamo marginu za sadržaj na manjim ekranima */
+    }
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+    flex: 1;
+}
+
+.burger-btn {
+    display: none; /* Sakriveno na većim ekranima */
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+}
+
+.footer {
+    background-color: #f9fafc;
+    color: #444;
+    text-align: center;
+    padding: 20px;
+    margin-left: 200px; 
+}

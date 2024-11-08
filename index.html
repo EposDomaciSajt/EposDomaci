@@ -3,16 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" text="type/css">
+    <link rel="stylesheet" href="css/style.css" text="type/css" />
     <title>TrioShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>Discover</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+    <input type="checkbox" id="burger-toggle" class="burger-toggle" />
+    <label for="burger-toggle" class="burger-btn">&#9776;</label>
+
+
+    <ul class="vertical-nav">
+      <li>
+        <a href="index.html"
+          ><img
+            id="logo"
+            src="image/TrioShop logo for an e-commerce website selling electronics.png"
+        /></a>
+      </li>
+      <li><a href="index.html">Početna</a></li>
+      <li><a href="#about">Proizvodi</a></li>
+      <li><a href="#services">Usluge</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+
+    <!-- Glavni sadržaj stranice -->
+    <div class="content">
+      <h1>Dobrodošli u TrioShop</h1>
+      <p>Ovde možete pronaći sve o našim proizvodima i uslugama.</p>
+    </div>
+
+    <!-- Footer sekcija -->
+    <footer class="footer">
+      <p>&copy; 2024 TrioShop. Sva prava zadržana.</p>
+    </footer>
   </body>
+
+  <script>
+    function toggleMenu() {
+      const navMenu = document.getElementById("navMenu");
+      navMenu.classList.toggle("open");
+    }
+  </script>
 </html>
