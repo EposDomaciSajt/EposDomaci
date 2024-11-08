@@ -6,7 +6,6 @@
     padding: 0;
 }
 
-/* Postavljanje visine na html i body za punu visinu menija */
 html, body {
     height: 100%;
     margin: 0;
@@ -23,14 +22,13 @@ ul {
     height: 80px;
 }
 
-/* Stilovi za vertikalni meni */
 .vertical-nav {
     width: 200px;
-    height: 100%;           /* Zauzima celu visinu ekrana */
+    height: 100%;           
     background-color: #f9fafc;
     padding: 0;
     margin: 0;
-    position: fixed;         /* Fiksira navigaciju pri skrolovanju */
+    position: fixed;        
     top: 0;
     left: 0;
 }
@@ -48,13 +46,13 @@ ul {
 }
 
 .vertical-nav li a:hover {
-    background-color: #e2e8f0; /* Dodajemo pozadinsku boju pri hoveru */
+    background-color: #e2e8f0; 
     color: #333;
 }
 
 @media (max-width: 300px) {
     .vertical-nav {
-        transform: translateX(-100%); /* Sakrij meni */
+        transform: translateX(-100%); 
         position: fixed;
         width: 100%;
         top: 0;
@@ -63,15 +61,15 @@ ul {
     }
 
     .burger-toggle:checked + .burger-btn + .vertical-nav {
-        transform: translateX(0); /* Prikazivanje menija */
+        transform: translateX(0); 
     }
 
     .burger-btn {
-        display: block; /* Vidljivo na manjim ekranima */
+        display: block; 
     }
 
     .content, .footer {
-        margin-left: 0; /* Uklanjamo marginu za sadržaj na manjim ekranima */
+        margin-left: 0; 
     }
 }
 
@@ -79,10 +77,19 @@ ul {
     margin-left: 200px;
     padding: 20px;
     flex: 1;
+    background-image: url("../image/elements\ of\ electronic\ devices\,\ laptops\,\ microwaves\,\ televisions.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.content h1 {
+    margin-top: 190px;
 }
 
 .burger-btn {
-    display: none; /* Sakriveno na većim ekranima */
+    display: none; 
     font-size: 24px;
     padding: 10px;
     cursor: pointer;
