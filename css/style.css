@@ -59,6 +59,13 @@ ul {
 }
 
 
+.horizontal-nav li #stranice:hover {
+    background-color: #fff;
+    color: black;
+    border-radius: 4px;
+}
+
+
 @media (max-width: 300px) {
     .vertical-nav {
         transform: translateX(-100%); 
