@@ -28,6 +28,20 @@ ul {
     align-items: center;
     background-color: rgb(7, 5, 8);
     padding: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.horizontal-nav::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    animation: expand-line 1s forwards ease-in-out;
 }
 
 .horizontal-nav ul {
@@ -41,6 +55,7 @@ ul {
 .horizontal-nav li {
     margin: 0 10px;
 }
+
 
 .horizontal-nav li #stranice {
     text-decoration: none;
@@ -85,14 +100,45 @@ ul {
     }
 
     .content, .footer {
-        margin-left: 0; 
+        margin: 0; 
     }
 }
 
 .content {
-    margin-left: 200px;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;     
+    justify-content: center;    
+    align-items: left;        
+    height: 100vh;              
+    text-align: center;          
     flex: 1;
+    background-image: url('../image/bodyindex.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.content p, h1 {
+    z-index: 1;
+}
+.content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.content p {
+    align-items: center;
+}
+
+.content a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .burger-btn {
@@ -112,4 +158,25 @@ ul {
     color: #fff;
     text-align: center;
     padding: 20px;
+    position: relative;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    animation: expand-line 1s forwards ease-in-out;
+}
+
+@keyframes expand-line {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }

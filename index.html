@@ -11,36 +11,30 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon" />
   </head>
   <body>
     <div class="horizontal-nav">
       <ul>
-        <li><a id="logoa" href="index.html"><img id="logo" src="image/logo.png"></a></li>
+        <li>
+          <a id="logoa" href="index.html"
+            ><img id="logo" src="image/logo.png"
+          /></a>
+        </li>
         <li><a id="stranice" href="index.html">Početna</a></li>
-        <li><a id="stranice" href="#about">Proizvodi</a></li>
-        <li><a id="stranice" href="#services">Usluge</a></li>
+        <li><a id="stranice" href="/pages/proizvodi.html">Proizvodi</a></li>
         <li><a id="stranice" href="#contact">Kontakt</a></li>
       </ul>
     </div>
-    
 
-    <!-- Glavni sadržaj stranice -->
     <div class="content">
       <h1>Dobrodošli u TrioShop</h1>
       <p>Ovde možete pronaći sve o našim proizvodima i uslugama.</p>
+      <p>Idite na <a id="proizvodis" href="/pages/proizvodi.html">proizvode.</a></p>
     </div>
 
-    <!-- Footer sekcija -->
     <footer class="footer">
       <p>&copy; 2024 TrioShop. Sva prava zadržana.</p>
     </footer>
   </body>
-
-  <script>
-    function toggleMenu() {
-      const navMenu = document.getElementById("navMenu");
-      navMenu.classList.toggle("open");
-    }
-  </script>
 </html>
