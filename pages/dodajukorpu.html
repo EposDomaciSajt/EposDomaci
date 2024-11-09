@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/dodajukorpu.css" type="text/css" />
+    <title>Proizvod - TrioShop</title>
+  </head>
+  <body>
+    <div class="horizontal-nav">
+      <ul>
+        <li>
+          <a id="logoa" href="../index.html"
+            ><img id="logo" src="../image/logo.png"
+          /></a>
+        </li>
+        <li><a id="stranice" href="../index.html">Početna</a></li>
+        <li><a id="stranice" href="/pages/proizvodi.html">Proizvodi</a></li>
+        <li><a id="stranice" href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <div class="content3">
+      <form action="/submit-order" method="POST" class="order-form">
+        <label for="first-name">Ime:</label>
+        <input type="text" id="first-name" name="first-name" required />
+
+        <label for="last-name">Prezime:</label>
+        <input type="text" id="last-name" name="last-name" required />
+
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="payment-method">Način plaćanja:</label>
+        <select id="payment-method" name="payment-method" required>
+          <option value="">Izaberi način plaćanja</option>
+          <option value="kartica">Kartica</option>
+          <option value="pouzećem">Pouzećem</option>
+          <option value="paypal">PayPal</option>
+        </select>
+
+        <label for="delivery">Način dostave:</label>
+        <div class="radio-group">
+          <input type="radio" id="standard" name="delivery" value="standard" required />
+          <label for="standard">Standardna dostava</label><br />
+          <input type="radio" id="express" name="delivery" value="express" />
+          <label for="express">Ekspres dostava</label>
+        </div>
+
+        <label for="subscribe">
+          <input type="checkbox" id="subscribe" name="subscribe" />
+          Želim da se pretplatim na newsletter
+        </label>
+
+        <label for="comments">Dodatni komentari:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Ostavite komentar..."></textarea>
+
+        <button type="submit">Pošalji narudžbinu</button>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2024 TrioShop. Sva prava zadržana.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.content3 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.order-form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.order-form h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.order-form label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.order-form input[type="text"],
+.order-form input[type="email"],
+.order-form input[type="tel"],
+.order-form select,
+.order-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.order-form .payment-method,
+.order-form .subscribe-newsletter {
+    margin-bottom: 15px;
+}
+
+.order-form .payment-method label,
+.order-form .subscribe-newsletter label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.order-form .payment-method input[type="radio"],
+.order-form .subscribe-newsletter input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.order-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4f46e5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.order-form button:hover {
+    background-color: #3e3ac8;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .order-form {
+        padding: 15px;
+    }
+
+    .order-form h2 {
+        font-size: 1.3rem;
+    }
+}
