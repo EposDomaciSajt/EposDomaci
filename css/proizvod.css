@@ -17,35 +17,7 @@
     flex-direction: column;
     height: 100%;
   }
-  
-  .horizontal-nav {
-    width: 100%;
-    background-color: #333;
-  }
-  
-  .horizontal-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-  }
-  
-  .horizontal-nav li {
-    margin-right: 20px;
-  }
-  
-  .horizontal-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 8px 15px;
-  }
-  
-  .horizontal-nav a:hover {
-    background-color: #4f46e5;
-    border-radius: 5px;
-  }
-  
+    
   .content2 {
     display: flex;
     flex-grow: 1;
