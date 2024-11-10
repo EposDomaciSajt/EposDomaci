@@ -9,12 +9,11 @@
   </head>
   <body>
     <div class="horizontal-nav">
-      <ul>
-        <li>
-          <a id="logoa" href="index.html"
-            ><img id="logo" src="../image/logo.png"
-          /></a>
-        </li>
+      <a id="logoa" href="index.html">
+        <img id="logo" src="../image/logo.png" />
+      </a>
+      <button class="burger-btn" onclick="toggleMenu()">☰</button>
+      <ul id="nav-menu">
         <li><a id="stranice" href="index.html">Početna</a></li>
         <li><a id="stranice" href="/pages/proizvodi.html">Proizvodi</a></li>
         <li><a id="stranice" href="#contact">Kontakt</a></li>
@@ -87,5 +86,11 @@
     <footer class="footer">
       <p>&copy; 2024 TrioShop. Sva prava zadržana.</p>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector(".burger-nav").classList.toggle("show");
+      }
+    </script>
   </body>
 </html>

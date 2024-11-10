@@ -8,19 +8,29 @@
     <title>Proizvod - TrioShop</title>
   </head>
   <body>
+    <!-- Horizontal Navigation Bar -->
     <div class="horizontal-nav">
-      <ul>
-        <li>
-          <a id="logoa" href="index.html"
-            ><img id="logo" src="../image/logo.png"
-          /></a>
-        </li>
+      <a id="logoa" href="index.html">
+        <img id="logo" src="../image/logo.png" />
+      </a>
+      <button class="burger-btn" onclick="toggleMenu()">☰</button>
+      <ul id="nav-menu">
         <li><a id="stranice" href="index.html">Početna</a></li>
         <li><a id="stranice" href="/pages/proizvodi.html">Proizvodi</a></li>
         <li><a id="stranice" href="#contact">Kontakt</a></li>
       </ul>
     </div>
 
+    <!-- Side Menu for Quick Navigation -->
+    <div class="sidemenu" id="side-menu">
+      <ul>
+        <li><a href="#specifications">Specifikacije</a></li>
+        <li><a href="#about-product">O proizvodu</a></li>
+        <li><a href="#product-video">Video recenzija</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
     <div class="content2">
       <div class="product-container">
         <div class="product-image">
@@ -31,7 +41,7 @@
           <p class="price">99.999 RSD</p>
           <p class="description">Karakteristike:</p>
 
-          <div class="specifications">
+          <div class="specifications" id="specifications">
             <div class="spec">
               <h4>Brend</h4>
               <p>Asus</p>
@@ -52,20 +62,19 @@
               <h4>Procesor</h4>
               <p>AMD Ryzen 5</p>
             </div>
-
             <div class="spec">
               <h4>Operativni sistem</h4>
               <p>Windows 11</p>
             </div>
           </div>
 
-          <a href="dodajukorpu.html"
-            ><button class="add-to-cart">Dodaj u korpu</button></a
-          >
+          <a href="dodajukorpu.html">
+            <button class="add-to-cart">Dodaj u korpu</button>
+          </a>
         </div>
       </div>
-      <!-- Sekcija O proizvodu -->
-      <div class="about-product">
+
+      <div class="about-product" id="about-product">
         <h2>O proizvodu</h2>
         <p class="about-description">
           Asus TUF A15 je snažan i izdržljiv laptop dizajniran za gejming i teže
@@ -78,10 +87,30 @@
           traže pouzdan i moćan laptop.
         </p>
       </div>
+
+      <div class="product-video" id="product-video">
+        <h2>Pogledajte recenziju proizvoda</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/hpvbxS51TlM?si=5H0BlDkSZ-xHD7au"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
 
     <footer class="footer">
       <p>&copy; 2024 TrioShop. Sva prava zadržana.</p>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("side-menu");
+        menu.classList.toggle("show");
+      }
+    </script>
   </body>
 </html>
