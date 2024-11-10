@@ -7,7 +7,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   display: flex;
@@ -123,7 +124,9 @@ ul {
   z-index: 0;
 }
 
-.content h1, .content p, .content a {
+.content h1,
+.content p,
+.content a {
   z-index: 1;
 }
 
