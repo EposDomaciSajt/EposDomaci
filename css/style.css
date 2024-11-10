@@ -89,6 +89,7 @@ ul {
 
   .horizontal-nav ul.show {
     display: flex;
+    z-index: 1;
   }
 
   .burger-btn {
