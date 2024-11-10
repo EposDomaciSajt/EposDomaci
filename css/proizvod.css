@@ -1,11 +1,9 @@
-/* General Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body and Container Styles */
 html, body {
   height: 100%;
   display: flex;
@@ -20,7 +18,6 @@ html, body {
   padding: 20px;
 }
 
-/* Burger Icon */
 .burger-btn {
   display: none;
   font-size: 24px;
@@ -28,7 +25,6 @@ html, body {
   cursor: pointer;
 }
 
-/* Navigation */
 .horizontal-nav {
   display: flex;
   justify-content: space-between;
@@ -93,7 +89,6 @@ html, body {
   }
 }
 
-/* Product and Footer Styles */
 .product-container {
   display: flex;
   flex-wrap: wrap;
@@ -153,7 +148,6 @@ html, body {
   line-height: 1.6;
 }
 
-/* Video Section */
 .product-video {
   width: 100%;
   max-width: 1200px;
@@ -166,7 +160,6 @@ html, body {
   border: none;
 }
 
-/* Side Menu */
 .sidemenu {
   display: none;
   position: fixed;
